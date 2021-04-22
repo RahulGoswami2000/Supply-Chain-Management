@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+<link rel="stylesheet" src="text/css" href="header.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .card-deck
+  {
+	border: 4px solid aqua;
+	text-align: center;
+	background-image: linear-gradient(to bottom, aqua,black);
+	display: inline-block;
+    width: 250px;
+    height: 130px;
+    margin: 2%;
+	}
+	.card-text
+	{
+		padding-top: 20px;
+		font-family: Century Gothic;
+		font-size: 19px;
+		color: white;
+		font-style: bold;
+		font-weight: 600;
+	}
+    .maindiv
+    {
+        margin-left: 4%;
+    }
+    a
+    {
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<header>
+		<div class="header">
+			<h2 id="Name"><center>Supply Chain Management</center></h2>
+		</div>
+	</header>
+    <h3><center>Select the Option:</center></h3>
+    <div class="maindiv">
+        <div class="card-deck">
+             <a href="Registeracc.jsp"> 
+        	    <p class="card-text">View Products</p>
+             </a> 
+            </div>
+            
+            <div class="card-deck">
+             <a href="Depositacc.jsp">
+        		<p class="card-text">View Orders</p>
+    	     </a>
+            </div>
+            
+            <div class="card-deck">
+             <a href="Withdrawl.jsp">
+                <p class="card-text">Dealers</p>
+             </a>
+            </div>
+    
+            <div class="card-deck">
+             <a href="custfeed.jsp">
+               <p class="card-text">View Feedback</p>
+              </a>
+            </div>
+    </div>
+	</body>
+</html>

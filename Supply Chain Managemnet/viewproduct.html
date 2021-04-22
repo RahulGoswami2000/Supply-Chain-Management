@@ -1,0 +1,179 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Page</title>
+<link rel="stylesheet" src="text/css" href="header.css"/>
+<style>
+.square
+{
+  width: auto;
+  border: 5px solid aqua;
+  height: 700px;
+  margin-left:0;
+  padding-top: 10px;
+  background-image: linear-gradient(to bottom,white,aqua);
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left:22px;
+  margin-top: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+a{
+color: white;
+}
+</style>
+</head>
+<body>
+<header>
+	<div class="header">
+		<h2 id="Name"><center>Supply Chain Management</center></h2>
+	</div>
+</header>
+<h2><center>Select the Products from following options</center></h2>
+<div class="square">
+<table>
+<tr>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="monitor.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><a href="buyproduct.html">MONITOR</a> </h1>
+    </div>
+  </div>
+</div>
+</td>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="keyboard.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><a href="buyproduct.html">KEYBOARD</a></h1> 
+    </div>
+  </div>
+</div>
+</td>
+
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="cpu.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><a href="buyproduct.html">CPU</a></h1> 
+    </div>
+  </div>
+</div>
+</td>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="headphones.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><a href="buyproduct.html">HEADPHONES</a></h1> 
+    </div>
+  </div>
+</div>
+</td>
+
+</tr>
+<tr>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="motherboard.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><a href="buyproduct.html">MOTHERBOARD</a></h1> 
+    </div>
+  </div>
+</div>
+</td>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="mouse.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><a href="buyproduct.html">MOUSE</a></h1> 
+    </div>
+  </div>
+</div>
+</td>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="ram.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><a href="buyproduct.html">RAM</a></h1> 
+    </div>
+  </div>
+</div>
+</td>
+<td>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="storage.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><a href="buyproduct.html">STORAGE</a></h1> 
+    </div>
+  </div>
+</div>
+</td>
+
+</tr>
+
+</table>
+</div>
+</body>
+</html>

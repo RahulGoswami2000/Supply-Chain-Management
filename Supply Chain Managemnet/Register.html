@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+<link rel="stylesheet" src="text/css" href="header.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.login-box
+	{
+		width:280px;
+		position:absolute;
+		top:30%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		color:black;
+		
+	}
+	 h1
+	 {
+		 margin: 0; 
+		 float:left;
+		 font-size:38px;
+		 border-bottom: 6px solid black;
+		 margin-bottom: 40px;
+		 padding:0 0 20px;
+		 text-align:center;
+	 }
+    .login-box p
+	 {
+		 margin: 0;
+		 padding: 0;
+		 font-size: 18px;	
+	}
+	.login-box input
+    {
+	    width: 100%;
+		overflow: hidden;
+		margin-bottom: 20px;
+		margin: 8px 0;
+		//padding:9px 0;	
+    }
+	.login-box input[type="text"], input[type="password"] ,input[type="email"]
+	 {
+		 border: none;
+		 outline: none;
+		 border-bottom: 1px solid aqua;
+		 background: none;
+		 color:aqua;
+		 font-size: 16px;
+		 width:100%;
+		 float:left;	
+	 }
+    .button
+		 {
+			 font-family: century gothic;
+			 border: none;
+			 color: white;
+			 padding: 15px 30px;
+			 text-align: center;
+			 text-decoration: none;
+			 display: inline-block;
+			 font-size: 16px;
+			 margin: 10px 2px;
+			 cursor: pointer;
+			 border-radius: 19px;
+			 background-image: linear-gradient(to right, aqua , black);
+		 }
+</style>
+</head>
+<body>
+<header>
+		<div class="header">
+			<h2 id="Name"><center>Supply Chain Management</center></h2>
+		</div>
+	</header>
+<center><h2>Register Here</h2></center>
+<div class="login-box">
+<form action="Register.jsp" method="post">
+			<p><b>Name of Organization:</b></p>
+			<input type="text" name="Nog">
+			<p><b>Firstname:</b></p>
+			<input type="text" name="fname">
+			<p><b>Lastname:</b></p>
+			<input type="text" name="lname">
+			<p><b>Office Address:</b></p>
+			<input type="text" name="Address">
+			<p><b>State:</b></p>
+			<input type="text" name="state">
+			<p><b>City:</b></p>
+			<input type="text" name="city">
+			<p><b>Pincode:</b></p>
+			<input type="text" name="Pincode">
+			<p><b>Phone:</b></p>
+			<input type="text" name="Phone">
+			<p><b>Email:</b></p>
+			<input type="email" name="Email">
+			<p><b>Username:</b></p>
+			<input type="text" name="uname">
+			<p><b>Password:</b></p>
+			<input type="password" name="Pswd">
+			<input type="reset" value="Reset" class="button">
+			<input type="submit" value="Submit" class="button">
+</form>
+</body>
+</html>
